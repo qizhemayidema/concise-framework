@@ -24,7 +24,7 @@ class Env
     {
         $this->app = $app;
 
-        $this->path = $this->app->getBashPath() . $this->name;
+        $this->path = $this->app->getBasePath() . $this->name;
 
         $this->processEnvFileToArray();
     }

@@ -19,6 +19,7 @@ class Container implements ArrayAccess,Countable {
         'app'   => App::class,
         'config'=> Config::class,
         'http'  => Http::class,
+        'route' => Route::class,
         'exception' => Exception::class,
         'env'   => Env::class,
     ];

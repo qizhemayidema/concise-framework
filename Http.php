@@ -16,9 +16,8 @@ class Http{
         $this->app->exception->register();
         //解析配置项
         $this->app->config->processConfigFileToArray();
-
-
         //解析路由
+        $this->app->route;
 
         //注册事件
 

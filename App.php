@@ -28,7 +28,7 @@ class App extends Container{
         $this->instances[App::class] = $this;
     }
 
-    public function getBashPath(){
+    public function getBasePath(){
         return $this->basePath;
     }
 
@@ -44,6 +44,11 @@ class App extends Container{
     public function getConfigExt()
     {
         return $this->configExt;
+    }
+
+    public function getRouteDirPath()
+    {
+        return $this->getBasePath() . 'route'. DIRECTORY_SEPARATOR;
     }
 
 }
